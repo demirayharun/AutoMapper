@@ -1,0 +1,31 @@
+﻿@model cosmos.Models.ViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>getProduct</title>
+</head>
+<body>
+    <div>
+
+        @{
+        foreach (var item in Model.orders)
+        {
+            <p> @item.CustomerID</p>
+            <br />
+    }
+
+            foreach (var item in Model.products)
+            {
+                <p> @item.ProductName</p>
+            <br />
+        }
+        }
+    </div>
+</body>
+</html>
